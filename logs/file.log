@@ -1,0 +1,130 @@
+2023/02/28 11:57:53.232  [I] [login.go:19]  warnning: Data.User.GetUserByPhone Error: <QuerySeter> no row found ; error Number: 1231231231
+2023/03/01 16:23:45.476  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:28:15.489  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:30:25.400  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:31:16.988  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:33:36.485  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:36:35.790  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:40:22.210  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:40:57.243  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:42:49.721  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:45:38.029  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:48:23.713  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:50:45.140  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:52:15.004  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:52:16.809  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:52:19.901  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:52:26.198  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:52:29.274  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:52:32.505  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:52:51.754  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:53:26.854  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 16:53:28.037  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 18:40:31.048  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 18:40:32.360  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 19:07:32.323  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 19:07:41.918  [C] [config.go:500]  the request url is  /fourfire/account/signup
+2023/03/01 19:07:41.918  [C] [config.go:501]  Handler crashed with error <Ormer.QueryTable> table name: `db_user_info` not exists
+2023/03/01 19:07:41.919  [C] [config.go:507]  F:/Programs/go/src/runtime/panic.go:965
+2023/03/01 19:07:41.919  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/client/orm/orm.go:490
+2023/03/01 19:07:41.920  [C] [config.go:507]  E:/go/src/social_server/data/user/user.go:29
+2023/03/01 19:07:41.921  [C] [config.go:507]  E:/go/src/social_server/services/account/signup.go:22
+2023/03/01 19:07:41.922  [C] [config.go:507]  E:/go/src/social_server/controllers/account/singup.go:29
+2023/03/01 19:07:41.923  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/controller.go:235
+2023/03/01 19:07:41.923  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/router.go:1229
+2023/03/01 19:07:41.924  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/filter.go:83
+2023/03/01 19:07:41.925  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/router.go:1002
+2023/03/01 19:07:41.925  [C] [config.go:507]  F:/Programs/go/src/net/http/server.go:2887
+2023/03/01 19:07:41.928  [C] [config.go:507]  F:/Programs/go/src/net/http/server.go:1952
+2023/03/01 19:07:41.928  [C] [config.go:507]  F:/Programs/go/src/runtime/asm_amd64.s:1371
+2023/03/01 19:08:44.875  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 19:10:40.296  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 19:10:43.040  [C] [config.go:500]  the request url is  /fourfire/account/signup
+2023/03/01 19:10:43.040  [C] [config.go:501]  Handler crashed with error 
+2023/03/01 19:10:43.041  [C] [config.go:507]  F:/Programs/go/src/runtime/panic.go:965
+2023/03/01 19:10:43.041  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/context/context.go:205
+2023/03/01 19:10:43.042  [C] [config.go:507]  E:/go/src/social_server/filters/login.go:30
+2023/03/01 19:10:43.042  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/filter.go:83
+2023/03/01 19:10:43.044  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/router.go:986
+2023/03/01 19:10:43.044  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/router.go:1136
+2023/03/01 19:10:43.045  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/filter.go:83
+2023/03/01 19:10:43.045  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/router.go:1002
+2023/03/01 19:10:43.046  [C] [config.go:507]  F:/Programs/go/src/net/http/server.go:2887
+2023/03/01 19:10:43.047  [C] [config.go:507]  F:/Programs/go/src/net/http/server.go:1952
+2023/03/01 19:10:43.048  [C] [config.go:507]  F:/Programs/go/src/runtime/asm_amd64.s:1371
+2023/03/01 19:10:43.049  [M] [log.go:191]  [HTTP] http: superfluous response.WriteHeader call from github.com/beego/beego/v2/server/web/context.(*Response).WriteHeader (context.go:366)
+2023/03/01 19:11:26.228  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 19:11:38.199  [C] [config.go:500]  the request url is  /fourfire/account/signup
+2023/03/01 19:11:38.200  [C] [config.go:501]  Handler crashed with error 
+2023/03/01 19:11:38.201  [C] [config.go:507]  F:/Programs/go/src/runtime/panic.go:965
+2023/03/01 19:11:38.201  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/context/context.go:205
+2023/03/01 19:11:38.202  [C] [config.go:507]  E:/go/src/social_server/filters/login.go:30
+2023/03/01 19:11:38.203  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/filter.go:83
+2023/03/01 19:11:38.203  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/router.go:986
+2023/03/01 19:11:38.205  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/router.go:1136
+2023/03/01 19:11:38.206  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/filter.go:83
+2023/03/01 19:11:38.207  [C] [config.go:507]  E:/go/pkg/mod/github.com/beego/beego/v2@v2.0.7/server/web/router.go:1002
+2023/03/01 19:11:38.208  [C] [config.go:507]  F:/Programs/go/src/net/http/server.go:2887
+2023/03/01 19:11:38.209  [C] [config.go:507]  F:/Programs/go/src/net/http/server.go:1952
+2023/03/01 19:11:38.209  [C] [config.go:507]  F:/Programs/go/src/runtime/asm_amd64.s:1371
+2023/03/01 19:11:38.210  [M] [log.go:191]  [HTTP] http: superfluous response.WriteHeader call from github.com/beego/beego/v2/server/web/context.(*Response).WriteHeader (context.go:366)
+2023/03/01 19:25:13.868  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 19:25:18.062  [I] [login.go:28]  checkinfo
+2023/03/01 19:37:08.844  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 19:37:13.938  [I] [login.go:28]  checkinfo
+2023/03/01 19:50:06.105  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 19:50:19.886  [I] [login.go:27]  ERROR: filter get param error: invalid character 'â' looking for beginning of object key string
+2023/03/01 19:51:14.865  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 19:51:49.711  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/01 19:52:25.686  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:31:21.866  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:32:04.875  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:32:45.277  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:33:47.563  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:34:46.341  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:35:01.147  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:35:51.381  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:38:25.134  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:39:15.992  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:39:33.918  [I] [tokenCheck.go:31]  ERROR: filter get param error: unexpected end of JSON input
+2023/03/02 10:39:53.229  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:53:44.547  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:54:02.191  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:55:08.698  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:57:47.056  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:58:57.810  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 10:59:23.517  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:01:46.316  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:02:12.147  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:04:56.961  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:05:06.401  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:05:08.378  [I] [timeCheck.go:32]  ERROR: filter get param error: unexpected end of JSON input
+2023/03/02 11:06:56.303  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:07:53.613  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:08:21.593  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:09:08.191  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:09:39.337  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:09:57.679  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:10:12.890  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:11:14.340  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:12:24.404  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:12:41.258  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:13:48.306  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:15:01.151  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:16:40.688  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:19:21.633  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:19:56.545  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:20:10.500  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:20:42.351  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:21:25.957  [I] [timeCheck.go:35]  ERROR: time_filter get param error: json: cannot unmarshal string into Go struct field TimeFilterReq.ttt of type int64
+2023/03/02 11:22:56.622  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:24:20.820  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:25:06.706  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:25:54.664  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:45:52.513  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 11:46:57.608  [I] [signup.go:47]  ERROR: userData.AddUser, user: {0 false 1677728817 account_test3 username_test2 1231231233 123123 1}  error: Error 1054 (42S22): Unknown column 'is_delete' in 'field list'
+2023/03/02 11:46:57.612  [I] [singup.go:31]  ERROR: /account/signup error: Error 1054 (42S22): Unknown column 'is_delete' in 'field list'
+2023/03/02 11:50:32.480  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 12:08:17.171  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 12:08:18.279  [I] [server.go:281]  http server Running on http://localhost:8804
+2023/03/02 12:08:19.374  [I] [server.go:281]  http server Running on http://localhost:8804
