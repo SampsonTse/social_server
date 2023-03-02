@@ -41,6 +41,19 @@ func (ctrl *AccountController) Login() {
 		ctrl.ServeJSON()
 		return
 	}
+	// 生成session
+	err = ctrl.SetSession(res.Token, res.Account)
+	if err != nil {
+		resp := common.CommonResponse{
+			Code: common.SET_SESS_ERROR,
+			Msg:  common.RequestMsg[common.SET_SESS_ERROR],
+			Data: "",
+		}
+		logs.Info("ERROR:", "/account/login set session error:", err)
+		ctrl.Data["json"] = resp
+		ctrl.ServeJSON()
+		return
+	}
 
 	resp := common.CommonResponse{
 		Code: common.RES_SUCCESS,

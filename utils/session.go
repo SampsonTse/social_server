@@ -1,6 +1,12 @@
 package utils
 
-import "github.com/beego/beego/session"
+import (
+	"context"
+	"fmt"
+
+	"github.com/beego/beego/v2/core/logs"
+	"github.com/beego/beego/v2/server/web/session"
+)
 
 func initSession() {
 	sessionConfig := &session.ManagerConfig{
@@ -14,4 +20,17 @@ func initSession() {
 	}
 	globalSessions, _ := session.NewManager("memory", sessionConfig)
 	go globalSessions.GC()
+}
+
+func CheckSess(sess session.Store, key string, account string) bool {
+
+	value, _ := sess.Get(context.Background(), key).(string)
+
+	if value == account {
+		return true
+	} else {
+		fmt.Println("TOKEN not belong this user")
+		logs.Info("WARN: TOKEN not belong this user:", account)
+		return false
+	}
 }

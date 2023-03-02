@@ -3,6 +3,7 @@ package utils
 import (
 	"time"
 
+	"github.com/beego/beego/v2/core/logs"
 	"github.com/golang-jwt/jwt/v4"
 )
 
@@ -47,6 +48,7 @@ func ValidateRegisteredClaims(tokenString string) bool {
 	})
 
 	if err != nil { // 解析token失败
+		logs.Info("WARN: parse token error:", err)
 		return false
 	}
 	return token.Valid
