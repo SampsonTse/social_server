@@ -13,6 +13,14 @@ import (
 var followConuntKey = "follow_count_"
 var fanConuntKey = "fan_count_"
 
+// 判断是否已经关注
+func JudgeIfFollowed(fanId int, followId int) bool {
+
+	o := orm.NewOrm()
+	qs := o.QueryTable("db_relation_follow")
+	return qs.Filter("user_id", fanId).Filter("follow_id", fanId).Exist()
+}
+
 // fanId:粉丝帐号
 // followId:被关注的帐号
 func FollowUser(fanId int, followId int) error {
@@ -34,7 +42,7 @@ func FollowUser(fanId int, followId int) error {
 	}
 
 	// 更新关注数据库和缓存
-	_, err = to.Insert(follow)
+	_, err = to.Insert(&follow)
 	if err != nil {
 		logs.Info("ERROR: Data.relation.FollowUser insert db_relation_attention failed:", err)
 		err = to.Rollback()
@@ -54,7 +62,7 @@ func FollowUser(fanId int, followId int) error {
 	}
 
 	// 更新粉丝数据库和缓存
-	_, err = to.Insert(fan)
+	_, err = to.Insert(&fan)
 	if err != nil {
 		logs.Info("ERROR: Data.relation.FollowUser insert db_relation_fan failed:", err)
 		err = to.Rollback()

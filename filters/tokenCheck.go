@@ -42,7 +42,7 @@ func TokenFilter() func(*context.Context) {
 
 		sess, _ := ctx.Session()
 		// 检查token是否过期
-		if !utils.ValidateRegisteredClaims(req.Token) || !utils.CheckSess(sess, req.Token, req.Account) {
+		if !utils.ValidateRegisteredClaims(req.Token) && !utils.CheckSess(sess, req.Token, req.Account) {
 			resp := common.CommonResponse{
 				Code: common.TOKEN_EXPIRE,
 				Msg:  common.RequestMsg[common.TOKEN_EXPIRE],

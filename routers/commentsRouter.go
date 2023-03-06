@@ -27,6 +27,15 @@ func init() {
 
     beego.GlobalControllerRouter["social_server/controllers/user:UserController"] = append(beego.GlobalControllerRouter["social_server/controllers/user:UserController"],
         beego.ControllerComments{
+            Method: "FollowUser",
+            Router: `/followUser`,
+            AllowHTTPMethods: []string{"post"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["social_server/controllers/user:UserController"] = append(beego.GlobalControllerRouter["social_server/controllers/user:UserController"],
+        beego.ControllerComments{
             Method: "GetUserInfo",
             Router: `/getUserInfo`,
             AllowHTTPMethods: []string{"get"},

@@ -13,7 +13,7 @@ import (
 	"github.com/beego/beego/v2/core/logs"
 )
 
-// @router /followUser
+// @router /followUser [post]
 func (ctrl *UserController) FollowUser() {
 
 	var req relationModel.FollowRequest

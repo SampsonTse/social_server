@@ -43,6 +43,14 @@ func FollowUser(data relationModel.FollowRequest) (relationModel.FollowResponse,
 		logs.Info("WARN: services.relation.FollowUser no rows:", data.Account)
 		return resp, nil
 	}
+
+	// 已经关注了
+	if !relationData.JudgeIfFollowed(fanUserInfo.Id, followUserInfo.Id) {
+		resp.Success = 0
+		resp.Reason = userModel.USER_MSG[userModel.ALREADY_FOLLOW]
+		return resp, nil
+	}
+
 	err = relationData.FollowUser(fanUserInfo.Id, followUserInfo.Id)
 	if err != nil {
 		logs.Info("ERROR: services.relation.FollowUser err:", err)

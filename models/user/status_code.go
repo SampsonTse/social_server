@@ -16,6 +16,7 @@ const (
 	// 查询用户
 	USER_NOT_EXIST        = 302
 	FOLLOW_USER_NOT_EXIST = 303
+	ALREADY_FOLLOW        = 304
 )
 
 var SING_UP_MSG = map[int]string{
@@ -35,4 +36,5 @@ var LOGIN_MSG = map[int]string{
 var USER_MSG = map[int]string{
 	USER_NOT_EXIST:        "您的用户不存在",
 	FOLLOW_USER_NOT_EXIST: "您关注的账号不存在",
+	ALREADY_FOLLOW:        "您已关注该用户",
 }
