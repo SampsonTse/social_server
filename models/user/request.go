@@ -1,5 +1,6 @@
 package user
 
+// 登录
 type LoginRequest struct {
 	Phone    int    `json:"phone"`
 	Password string `json:"password"`
@@ -12,6 +13,7 @@ type LoginRespsonse struct {
 	Account string `json:"account"`
 }
 
+// 注册
 type SignUpRequest struct {
 	Phone    int    `json:"phone"`
 	Password string `json:"password"`

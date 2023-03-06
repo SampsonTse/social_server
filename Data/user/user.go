@@ -30,6 +30,15 @@ func JudgeUserAccountExist(account string) bool {
 	return exist
 }
 
+// 获取帐号信息
+func GetUserInfoByAccount(account string) (userModel.UserInfo, error) {
+	o := orm.NewOrm()
+	var u userModel.UserInfo
+	err := o.QueryTable("db_user_info").Filter("Account", account).One(&u)
+	return u, err
+
+}
+
 // 判断手机号是否存在重复
 func JudgeUserPhoneExist(phone int) bool {
 	o := orm.NewOrm()

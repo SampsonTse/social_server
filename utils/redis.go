@@ -4,33 +4,29 @@ import (
 	"context"
 	"time"
 
-	"github.com/beego/beego/v2/client/cache"
 	"github.com/beego/beego/v2/core/config"
 	"github.com/beego/beego/v2/core/logs"
+	"github.com/redis/go-redis/v9"
 )
 
-// 官方文档建议定义全局化变量
-var RedisCache cache.Cache
+// 用go-redis库可以存储多个数据类型
+// 如果用beego自带的cache，redis引擎，只能存string类型
+var RedisCache *redis.Client
 
 func initRedis() error {
-	redisConn, err := config.String("sqlconn")
+	redisConn, err := config.String("redishost")
+
 	if err != nil {
-		logs.Info("ERROR: initMySQL error:", err)
-		return err
-	}
-	RedisCache, err = cache.NewCache("redis", `{"conn":"`+redisConn+`"}`)
-	if err != nil {
-		logs.Info("ERROR: initMySQL error:", err)
-		return err
+		logs.Info("ERROR: redis init error:", err)
 	}
 
+	RedisCache = redis.NewClient(&redis.Options{
+		Addr:     redisConn,
+		Password: "", // 没有密码，默认值
+		DB:       0,  // 默认DB 0
+	})
+
+	err = RedisCache.Set(context.Background(), "key_string", "test", time.Minute*10).Err()
+	// fmt.Println(err)
 	return nil
-}
-
-func SetKey(key string, value interface{}, expireTime time.Duration) error {
-	err := RedisCache.Put(context.TODO(), key, value, expireTime)
-	if err != nil {
-		logs.Info("ERROR: Redis Set Key error:", err, "  key:", key)
-	}
-	return err
 }

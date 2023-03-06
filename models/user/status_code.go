@@ -12,6 +12,10 @@ const (
 	PHONE_NOT_EXIST = 202
 	PASS_ERROR      = 203
 	GET_TOKEN_ERROR = 204
+
+	// 查询用户
+	USER_NOT_EXIST        = 302
+	FOLLOW_USER_NOT_EXIST = 303
 )
 
 var SING_UP_MSG = map[int]string{
@@ -26,4 +30,9 @@ var LOGIN_MSG = map[int]string{
 	PHONE_NOT_EXIST: "该手机号不存在",
 	PASS_ERROR:      "密码错误",
 	GET_TOKEN_ERROR: "生成TOKEN失败",
+}
+
+var USER_MSG = map[int]string{
+	USER_NOT_EXIST:        "您的用户不存在",
+	FOLLOW_USER_NOT_EXIST: "您关注的账号不存在",
 }

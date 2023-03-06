@@ -30,8 +30,8 @@ func (ctrl *AccountController) SingUp() {
 	if err != nil {
 		logs.Info("ERROR:", "/account/signup error:", err)
 		resp := common.CommonResponse{
-			Code: common.GET_DATA_ERROR,
-			Msg:  common.RequestMsg[common.GET_DATA_ERROR],
+			Code: common.DB_ERROR,
+			Msg:  common.RequestMsg[common.DB_ERROR],
 			Data: "",
 		}
 		ctrl.Data["json"] = resp

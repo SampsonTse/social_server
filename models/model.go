@@ -12,6 +12,6 @@ import (
 
 func init() {
 	orm.RegisterModel(new(userModel.UserInfo))
-	orm.RegisterModel(new(relationModel.RelationAttenion))
-	orm.RegisterModel(new(relationModel.RelationFollower))
+	orm.RegisterModel(new(relationModel.RelationFollow))
+	orm.RegisterModel(new(relationModel.RelationFan))
 }
